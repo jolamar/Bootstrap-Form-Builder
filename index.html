@@ -4,21 +4,14 @@
     <meta charset="utf-8">
     <title>Bootstrap 3 Form Builder</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
     <link href="assets/css/lib/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/custom.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!--[if lt IE 9]>
-<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
-
-<link rel="shortcut icon" href="images/favicon.ico">
-<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body>
@@ -35,13 +28,6 @@
                             <div id="target">
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="row save-button-row">
-                    <div class="col-md-12 form-group">
-                        <input id="save-button" type="button" class="btn btn-info" value="Save" />
-                        <input id="clear-button" type="button" class="btn btn-default" value="Clear" />
-                        <input id="cancel-button" type="button" class="btn btn-danger" value="Cancel" />
                     </div>
                 </div>
             </div>
@@ -71,6 +57,10 @@
 		window.form_builder_baseUrl = "assets/js/lib/";
 		window.form_builder_temp_container = "body";
 		window.form_fields_resource = "data/input.json";
+		
+		// INIT FORM WITH FIELDS
+		window.form_builder_initial_data = [{"title":"Form Name","fields":{"name":{"label":"Form Name","type":"input","value":"Form Blame","name":"name"}},"fresh":true},{"title":"Text Input","fields":{"id":{"label":"ID / Name","type":"input","value":"textinput-0","name":"id"},"label":{"label":"Label Text","type":"input","value":"Text Label","name":"label"},"placeholder":{"label":"Placeholder","type":"input","value":"placeholder","name":"placeholder"},"helptext":{"label":"Help Text","type":"input","value":"help","name":"helptext"},"required":{"label":"Required","type":"checkbox","value":false,"name":"required"},"inputsize":{"label":"Input Size","type":"select","value":[{"value":"input-mini","label":"Mini","selected":false},{"value":"input-small","label":"Small","selected":false},{"value":"input-medium","label":"Medium","selected":false},{"value":"input-large","label":"Large","selected":false},{"value":"input-xlarge","label":"Xlarge","selected":true},{"value":"input-xxlarge","label":"Xxlarge","selected":false}],"name":"inputsize"}},"fresh":true}];
+		
 	</script>
     <script data-main="assets/js/main.js" src="assets/js/lib/require.js" ></script>
 </body>
