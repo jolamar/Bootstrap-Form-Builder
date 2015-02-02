@@ -17,4 +17,4 @@ The initial form builder is hosted on github pages [here](http://minikomi.github
   - add the template to [snippet-templates.js](https://github.com/jolamar/Bootstrap-Form-Builder/blob/gh-pages/assets/js/templates/snippet/snippet-templates.js)
 * If you want to add a new tab, you'll also need to adjust the [app.js file](https://github.com/jolamar/Bootstrap-Form-Builder/blob/gh-pages/assets/js/app.js) to make sure the tab is loaded.
 
-## Credits to Minikomi for the [initial repo](https://github.com/minikomi/Bootstrap-Form-Builder)
+### Credits to Adam Moore (minikomi) for the [initial repo](https://github.com/minikomi/Bootstrap-Form-Builder)
