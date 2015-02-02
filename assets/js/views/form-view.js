@@ -55,6 +55,7 @@ define([
         $("#render").val(rendered);
         
         var rendered_collection_json = this.collection.renderAllJSON();
+        localStorage.rendered_json = rendered_collection_json;
         $("#render_json").val(rendered_collection_json);
   	}
     , render: function(){
@@ -74,6 +75,7 @@ define([
       $("#render").val(rendered);
 
       var rendered_collection_json = this.collection.renderAllJSON();
+      localStorage.rendered_json = rendered_collection_json;
       $("#render_json").val(rendered_collection_json);
 
       this.$el.appendTo("#build div#target");

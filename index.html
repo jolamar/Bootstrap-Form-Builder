@@ -59,8 +59,7 @@
 		window.form_fields_resource = "data/input.json";
 		
 		// INIT FORM WITH FIELDS
-		window.form_builder_initial_data = [{"title":"Form Name","fields":{"name":{"label":"Form Name","type":"input","value":"Form Blame","name":"name"}},"fresh":true},{"title":"Text Input","fields":{"id":{"label":"ID / Name","type":"input","value":"textinput-0","name":"id"},"label":{"label":"Label Text","type":"input","value":"Text Label","name":"label"},"placeholder":{"label":"Placeholder","type":"input","value":"placeholder","name":"placeholder"},"helptext":{"label":"Help Text","type":"input","value":"help","name":"helptext"},"required":{"label":"Required","type":"checkbox","value":false,"name":"required"},"inputsize":{"label":"Input Size","type":"select","value":[{"value":"input-mini","label":"Mini","selected":false},{"value":"input-small","label":"Small","selected":false},{"value":"input-medium","label":"Medium","selected":false},{"value":"input-large","label":"Large","selected":false},{"value":"input-xlarge","label":"Xlarge","selected":true},{"value":"input-xxlarge","label":"Xxlarge","selected":false}],"name":"inputsize"}},"fresh":true}];
-		
+		window.form_builder_initial_data = eval("[" +localStorage.rendered_json + ']');
 	</script>
     <script data-main="assets/js/main.js" src="assets/js/lib/require.js" ></script>
 </body>
